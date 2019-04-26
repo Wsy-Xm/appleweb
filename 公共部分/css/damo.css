@@ -1,0 +1,238 @@
+.banner {
+    width: 44px;
+}
+.banner  {
+    position: fixed;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    background-color: #444;
+    text-align: right;
+    font-size: 12px;
+    color: #fff;
+    z-index: 1;
+}
+body .head {
+    /* display: none; */
+    
+}
+.head .b-nav,.head .s-nav {
+    position: fixed;
+    top: 44px;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    /* padding: 0 30px; */
+    box-sizing: border-box;
+    background-color:#313131;
+    opacity: 0.98;
+    z-index: 1;
+    /* max-width: 1000px; */
+    /* width: 100%; */
+    /* margin: 0 auto; */
+    display: flex;
+}
+.b-nav {
+    padding: 0 52px;
+}
+.head .b-nav li, .s-nav  li {
+    flex: 1;
+    text-align: center;
+    /* padding: 0 30px; */
+    /* margin: 0 10px; */
+}
+.head .s-nav li:first-child {
+    /* text-align: left; */
+    margin-top: 18px;
+    padding-left: 5px;
+}
+.head .s-nav li:last-child {
+    text-align: right;
+}
+.head .s-nav {
+    display: none;
+}
+.head .s-nav li:first-child a {
+    display: block;
+    width: 18px;
+    height: 44px;
+}
+.head .s-nav span {
+    display: block;
+    border-bottom: 1px solid #fff;
+    width: 18px;
+}
+.head .s-nav span + span {
+    margin-top: 8px;
+}
+.rt {
+    transform: rotate(45deg);
+}
+.rb {
+    transform: rotate(-45deg);
+}
+.nav-bottom {
+    display: none;
+    position: fixed;
+    top: 88px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #000;
+}
+.nav-bottom > div {
+    padding: 15px 0;
+    border-bottom: 1px solid #282828;
+}
+.nav-bottom > div span {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 5%;
+    width: 10%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 17px;
+   
+    background-color: #000;
+}
+.nav-bottom > div span a {
+    color: #66bbff;
+}
+.nav-bottom input {
+    width: 80%;
+    height: 40px;
+    margin: 0 10%;
+    padding-left: 30px;
+    box-sizing: border-box;
+    background: url(../img/search.jpg) no-repeat 5px center;
+    color: #999999;
+    background-color: #313131;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 999;
+}
+.nav-bottom ul li {
+    width: 80%;
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid #282828;
+
+    margin-left: 10%;
+    color: #fff;
+    font-size: 16px;
+}
+.blur-after {
+    display: none;
+}
+.nav-bottom .blur-after li{
+    font-size: 14px;
+}
+.nav-bottom .blur-after li:first-child {
+    font-size: 12px;
+    color: #333;
+    border-bottom: 0;
+}
+.main {
+    height: 400px;
+}
+.footer {
+    padding-top: 20px;
+    background-color: #F2F2F2;
+    /* height: 564px; */
+    font-size: 12px;
+    color: #333;
+    /* z-index: 1; */
+}
+.footer  .w{
+    width: 980px;
+    /* width: 100%; */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer .ft-top {
+    margin-bottom: 20px;
+}
+.ft-top p{
+    margin-top: 10px;
+}
+.footer .ft-center {
+    margin-top: 10px;
+}
+.ft-center dl {
+    float: left;
+    width: 20%;
+    font-size: 12px;
+    
+}
+.ft-center dt {
+    font-weight: 700;
+    margin: 20px 0;
+}
+.ft-center dd {
+    
+    margin-bottom: 10px;
+    color: #555;
+}
+.ft-center ul {
+    display: none;
+    padding: 5px 15px;
+    
+}
+.ft-center ul a {
+    color: #333;
+}
+.ft-center > ul > li {
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+}
+.ft-center ul li span {
+    float: right;
+    padding-right: 5px;
+}
+.ft-center > ul  ul  li {
+    padding: 6px 0;
+}
+.ft-center > ul  ul {
+    display: none;
+}
+.footer .ft-bot {
+    padding: 30px 0 20px;
+    color: #555;
+}
+.ft-bot a {
+    color: #0070c9;
+}
+/* .ft-top hr {
+    margin: 20px 0;
+} */
+.ft-bot p:first-child{
+    margin-bottom: 5px;
+}
+.ft-bot p:last-child{
+    margin-top: 5px;
+}
+@media screen and (max-width:740px) {
+    .head .s-nav {
+        padding: 0 10px;
+        display: flex;
+    }
+    .head .w .b-nav {
+        display: none;
+    }
+    .ft-center ul {
+        display: block;
+    }
+    .ft-center dl {
+        display: none;
+    }
+}
+@media screen and (max-width:1024px) {
+    .footer .w {
+        padding: 0 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
